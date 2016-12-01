@@ -148,10 +148,22 @@
                                     <constraint firstItem="B0J-Q7-a4y" firstAttribute="leading" secondItem="7Pz-Py-yHN" secondAttribute="leading" constant="28" id="yzv-tw-Ylc"/>
                                 </constraints>
                             </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-1R-iEI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="6nt-La-FNQ"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="The Legend of Heroes" id="ptq-BU-NDr"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="7Pz-Py-yHN" secondAttribute="trailing" id="9z6-x4-Gry"/>
+                            <constraint firstAttribute="trailing" secondItem="xO0-1R-iEI" secondAttribute="trailing" id="Dvt-2R-4ZV"/>
+                            <constraint firstItem="xO0-1R-iEI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QkW-Sa-ctq"/>
+                            <constraint firstItem="xO0-1R-iEI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UOs-Pj-vmK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Pz-Py-yHN" secondAttribute="bottom" id="rPi-Dd-RmE"/>
                             <constraint firstItem="7Pz-Py-yHN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sQy-mF-0dF"/>
                             <constraint firstItem="7Pz-Py-yHN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ydw-xr-3Hg"/>
@@ -159,6 +171,10 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="780"/>
+                    <connections>
+                        <outlet property="navigationBar" destination="ptq-BU-NDr" id="Xrw-CS-mkv"/>
+                        <outlet property="scrollView" destination="7Pz-Py-yHN" id="6cQ-Ff-cjf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -168,6 +184,10 @@
         <scene sceneID="ZGo-j2-nzp">
             <objects>
                 <viewController id="q0I-Yd-jFj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gH9-hM-1lT"/>
+                        <viewControllerLayoutGuide type="bottom" id="F3a-zA-3bh"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tvd-L3-MdK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
